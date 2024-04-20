@@ -1,1 +1,14 @@
-/* Add screen styles below */
+/* Select the parent element that contains a child element with a specific class */
+.parent:has(.child) .child {
+    background-color: lightblue;
+}
+
+.parent:has(.child) {
+    border: 2px solid red;
+}
+
+.child {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+}
